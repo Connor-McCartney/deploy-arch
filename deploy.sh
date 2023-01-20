@@ -12,4 +12,4 @@ genfstab -U /mnt >> /mnt/etc/fstab
 cd /mnt
 wget https://raw.githubusercontent.com/Connor-McCartney/deploy-arch/main/after-chroot.sh
 chmod +x after-chroot.sh
-chroot /mnt ./after-chroot.sh
+arch-chroot /mnt
