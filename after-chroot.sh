@@ -8,8 +8,8 @@ locale-gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
 echo "arch" > /etc/hostname
 
-pacman -S xorg sddm grub konsole
-pacman -S plasma-desktop plasma-wayland-session 
+pacman -S --noconfirm xorg sddm grub konsole
+pacman -S --noconfirm plasma-desktop plasma-wayland-session 
 
 systemctl enable NetworkManager
 systemctl enable sddm.service
