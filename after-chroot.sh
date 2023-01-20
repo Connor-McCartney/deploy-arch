@@ -1,5 +1,6 @@
 
-pacman -S xorg sddm plasma-desktop plasma-wayland-session konsole
+pacman -S xorg sddm konsole
+pacman -S plasma-desktop plasma-wayland-session 
 
 systemctl enable NetworkManager
 systemctl enable sddm.service
