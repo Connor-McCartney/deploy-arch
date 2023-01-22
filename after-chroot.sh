@@ -18,6 +18,7 @@ cd paru
 makepkg -si
 
 printf "1\ny\n \n" | paru google-chrome
+printf "1\ny\n \n" | paru kwin-bismuth
 
 systemctl enable NetworkManager
 systemctl enable sddm.service
