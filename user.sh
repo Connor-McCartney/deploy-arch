@@ -1,3 +1,5 @@
+rustup default stable
+
 # Paru
 cd /tmp
 git clone https://aur.archlinux.org/paru.git
