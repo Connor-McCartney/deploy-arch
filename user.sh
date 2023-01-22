@@ -1,5 +1,11 @@
 rustup default stable
 
+# dotfiles
+cd /tmp
+wget https://raw.githubusercontent.com/Connor-McCartney/dotfiles/main/install.sh
+chmod +x install.sh
+./install.sh
+
 # Paru
 cd /tmp
 git clone https://aur.archlinux.org/paru.git
