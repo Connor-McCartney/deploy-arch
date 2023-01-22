@@ -22,7 +22,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 useradd -m -G users,wheel,audio,video,sddm -s /bin/bash connor
 printf " \n \n" | passwd
 printf " \n \n" | passwd connor
-echo -e "root ALL=(ALL:ALL) ALL\n%wheel ALL=(ALL:ALL) ALL\n@includedir /etc/sudoers.d" > /etc/sudoers
+echo -e "root ALL=(ALL:ALL) ALL\n%wheel ALL=(ALL:ALL) NOPASSWD: ALL\n@includedir /etc/sudoers.d" > /etc/sudoers
 
 cd /home/connor
 wget https://raw.githubusercontent.com/Connor-McCartney/deploy-arch/main/user.sh
