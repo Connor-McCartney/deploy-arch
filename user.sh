@@ -12,8 +12,8 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 
-printf "1\ny\n \n" | paru google-chrome
-printf "1\ny\n \n" | paru kwin-bismuth
+printf "1\ny\n" | paru google-chrome
+printf "1\ny\n" | paru kwin-bismuth
 
 # Packer
 # https://github.com/wbthomason/packer.nvim
