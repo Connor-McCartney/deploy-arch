@@ -8,14 +8,16 @@ locale-gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
 echo "arch" > /etc/hostname
 
-pacman -S base-devel # choose rustup when prompted
-pacman -S --noconfirm xorg sddm grub konsole git npm wget spectacle discord
+pacman -Syu base-devel # choose rustup when prompted
+pacman -S --noconfirm xorg sddm grub konsole git npm wget spectacle discord sagemath
 pacman -S --noconfirm plasma-desktop plasma-wayland-session 
 
 cd /tmp
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
+
+printf "1\ny\n \n" | paru google-chrome
 
 systemctl enable NetworkManager
 systemctl enable sddm.service
