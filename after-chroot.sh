@@ -9,7 +9,7 @@ echo "LANG=en_US.UTF-8" > /etc/locale.conf
 echo "arch" > /etc/hostname
 
 pacman -S base-devel # choose rustup when prompted
-pacman -S --noconfirm xorg sddm grub konsole git
+pacman -S --noconfirm xorg sddm grub konsole git npm wget spectacle discord
 pacman -S --noconfirm plasma-desktop plasma-wayland-session 
 
 cd /tmp
