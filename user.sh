@@ -15,9 +15,7 @@ git clone https://aur.archlinux.org/paru-bin.git
 cd paru-bin
 makepkg -si --noconfirm
 
-paru -S --noconfirm google-chrome
-paru -S --noconfirm kwin-bismuth-bin
-paru -S --noconfirm onlyoffice-bin
+paru -S --noconfirm google-chrome kwin-bismuth-bin onlyoffice-bin dbus-glib-git
 
 # Packer
 # https://github.com/wbthomason/packer.nvim
