@@ -10,7 +10,7 @@ chmod +x install.sh
 cd /tmp
 git clone https://aur.archlinux.org/paru-bin.git
 cd paru-bin
-printf "\n" | makepkg -si
+makepkg -si --noconfirm
 
 paru -S --noconfirm google-chrome
 paru -S --noconfirm kwin-bismuth
