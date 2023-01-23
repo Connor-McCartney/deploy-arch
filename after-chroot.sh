@@ -9,7 +9,7 @@ echo "LANG=en_US.UTF-8" > /etc/locale.conf
 echo "arch" > /etc/hostname
 
 pacman -Syu --noconfirm rustup
-pacman -S --noconfirm base-devel xorg sddm grub konsole git npm wget spectacle discord sagemath
+pacman -S --noconfirm base-devel xorg sddm grub konsole git npm wget spectacle discord sagemath ttc-iosevka
 pacman -S --noconfirm plasma-desktop plasma-wayland-session 
 
 systemctl enable NetworkManager
