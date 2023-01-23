@@ -7,7 +7,7 @@ mkfs.ext4 "$DISK""2"
 mount "$DISK""2" /mnt
 swapon "$DISK""1"
 
-pacstrap -K /mnt base linux linux-firmware networkmanager neovim man-db man-pages texinfo sudo
+pacstrap -K /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 cd /mnt
 wget https://raw.githubusercontent.com/Connor-McCartney/deploy-arch/main/after-chroot.sh
