@@ -8,7 +8,7 @@ chmod +x install.sh
 
 # Paru
 cd /tmp
-git clone https://aur.archlinux.org/paru.git
+git clone https://aur.archlinux.org/paru-bin.git
 cd paru
 makepkg -si
 
