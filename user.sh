@@ -5,6 +5,9 @@ cd /tmp
 wget https://raw.githubusercontent.com/Connor-McCartney/dotfiles/main/install.sh
 chmod +x install.sh
 ./install.sh
+cd ~
+rm .bashrc
+wget https://raw.githubusercontent.com/Connor-McCartney/dotfiles/main/.bashrc
 
 # Paru
 cd /tmp
