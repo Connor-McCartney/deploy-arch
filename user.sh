@@ -9,7 +9,7 @@ chmod +x install.sh
 # Paru
 cd /tmp
 git clone https://aur.archlinux.org/paru-bin.git
-cd paru
+cd paru-bin
 makepkg -si
 
 paru -S --noconfirm google-chrome
