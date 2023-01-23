@@ -11,7 +11,7 @@ echo "arch" > /etc/hostname
 pacman -Syu --noconfirm rustup
 pacman -S --noconfirm networkmanager neovim man-db man-pages texinfo sudo base-devel dbus-glib xorg sddm grub vlc htop git npm wget keepassxc obsidian discord sagemath ttc-iosevka
 # https://archlinux.org/groups/x86_64/plasma/
-pacman -S --noconfirm plasma-desktop plasma-wayland-session kscreen plasma-nm plasma-pa dolphin konsole spectacle gwenview ark okular kwalletmanager
+pacman -S --noconfirm plasma-desktop plasma-wayland-session sddm-kcm kscreen plasma-nm plasma-pa dolphin konsole spectacle gwenview ark okular kwalletmanager
 
 systemctl enable NetworkManager
 systemctl enable sddm.service
