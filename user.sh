@@ -27,4 +27,4 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 echo -e "root ALL=(ALL:ALL) ALL\n%wheel ALL=(ALL:ALL) ALL\n@includedir /etc/sudoers.d" > /etc/sudoers
-rm /home/connor/Desktop/user.sh
+rm /home/connor/user.sh
