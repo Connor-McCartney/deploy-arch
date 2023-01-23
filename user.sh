@@ -13,7 +13,7 @@ cd paru-bin
 makepkg -si --noconfirm
 
 paru -S --noconfirm google-chrome
-paru -S --noconfirm kwin-bismuth
+paru -S --noconfirm kwin-bismuth-bin
 
 # Packer
 # https://github.com/wbthomason/packer.nvim
