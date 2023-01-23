@@ -9,9 +9,9 @@ echo "LANG=en_US.UTF-8" > /etc/locale.conf
 echo "arch" > /etc/hostname
 
 pacman -Syu --noconfirm rustup
-pacman -S --noconfirm base-devel xorg sddm grub konsole git npm wget keepassxc obsidian spectacle discord sagemath ttc-iosevka
+pacman -S --noconfirm base-devel xorg sddm grub vlc htop git npm wget keepassxc obsidian discord sagemath ttc-iosevka
 # https://archlinux.org/groups/x86_64/plasma/
-pacman -S --noconfirm plasma-desktop plasma-wayland-session plasma-nm plasma-pa dolphin gwenview ark
+pacman -S --noconfirm plasma-desktop plasma-wayland-session plasma-nm plasma-pa dolphin konsole spectacle gwenview ark okular kwalletmanager
 
 systemctl enable NetworkManager
 systemctl enable sddm.service
