@@ -10,7 +10,7 @@ echo "arch" > /etc/hostname
 
 pacman -Syu --noconfirm rustup
 pacman -S --noconfirm base-devel xorg sddm grub konsole git npm wget spectacle discord sagemath ttc-iosevka
-pacman -S --noconfirm plasma-desktop plasma-wayland-session 
+pacman -S --noconfirm plasma-desktop plasma-wayland-session plasma-nm plasma-pa
 
 systemctl enable NetworkManager
 systemctl enable sddm.service
