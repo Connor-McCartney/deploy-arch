@@ -26,7 +26,7 @@ printf " \n \n" | passwd
 printf " \n \n" | passwd connor
 echo -e "root ALL=(ALL:ALL) ALL\n%wheel ALL=(ALL:ALL) NOPASSWD: ALL\n@includedir /etc/sudoers.d" > /etc/sudoers
 
-cd /home/connor/Desktop
+cd /home/connor
 wget https://raw.githubusercontent.com/Connor-McCartney/deploy-arch/main/user.sh
 chmod +x user.sh
 
