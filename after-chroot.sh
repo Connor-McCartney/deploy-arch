@@ -21,6 +21,9 @@ grub-install $DISK # BIOS
 # grub-install --target=x86_64-efi --efi-directory=/boot # UEFI
 grub-mkconfig -o /boot/grub/grub.cfg
 
+# For my hard drive
+printf "[defaults]\nntfs_defaults=uid=\$UID,gid=\$GID\n" > /etc/udisks2/mount_options.conf
+
 useradd -m -G users,wheel,audio,video,sddm -s /bin/bash connor
 printf " \n \n" | passwd
 printf " \n \n" | passwd connor
